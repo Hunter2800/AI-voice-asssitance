@@ -114,13 +114,13 @@ while 1:
         if "send a message".lower() in query.lower():
             speak("What message you want to send")
             msg = takecommand()
-            pywhatkit.sendwhatmsg("+919594280028", msg, datetime.datetime.now().hour, datetime.datetime.now().minute + 2
+            pywhatkit.sendwhatmsg("+919579361390", msg, datetime.datetime.now().hour, datetime.datetime.now().minute + 1
                                   , 15, True, 5)
 
         # This code is for send email
-        if 'send a mail' in query:
+        if 'send a email' in query:
             try:
-                to = "chiragpatil418@gmail.com"
+                to = "neelasurve3@gmail.com"
                 speak("What should I say?")
                 content = takecommand()
                 sendEmail(to, content)
@@ -144,7 +144,7 @@ while 1:
             os.startfile(codePath)
 
         # This code is for creating files of the content you searched
-        if "using ai".lower() in query.lower():
+        if "Write".lower() in query.lower():
             ai(prompt=query)
 
         # This code is for resetting chat
